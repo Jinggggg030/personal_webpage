@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yi Jing - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <img src="profile.jpg" alt="Yi Jing" class="profile-img">
+            <h1>Hi, I'm Yi Jing</h1>
+            <p>Software Engineering Student & UI/UX Enthusiast</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a software engineering student with a knack for problem-solving. I like to spend time learning new coding skills through YouTube and exploring different tools and frameworks to improve my technical knowledge. I also have a keen in designing intuitive and user-friendly interfaces. Most importantly, I enjoy debugging and troubleshooting system issues - being a "bugs killer" gives me great satisfaction! </p>
+    </section>
+
+    <section id="education">
+        <h2>Education & Skills</h2>
+        <table class="data-table">
+            <tr>
+                <th>Institution</th>
+                <th>Program</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Universiti Teknikal Malaysia Melaka (UTeM)</td>
+                <td>Software Engineering</td>
+                <td>Current Student</td>
+            </tr>
+        </table>
+
+        <h3>Technical Skills</h3>
+        <ul class="skills-list">
+            <li>Languages: C++, JavaScript, PHP, python</li>
+            <li>Frameworks: React, Flutter</li>
+            <li>Database Architecture & SQL Normalization</li>
+            <li>UI/UX Design & Usability Testing</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <article class="project-card">
+                <h3>RehabAI</h3>
+                <p>An AI-based physiotherapy assistance system designed to aid and monitor patient rehabilitation progress.</p>
+            </article>
+            <article class="project-card">
+                <h3>Event Management System</h3>
+                <p>A console-based application built in C++ that handles core functionalities including event scheduling, vendor assignment, and so on.</p>
+            </article>
+            <article class="project-card">
+                <h3>eNanas</h3>
+                <p>A community service (SULAM) mobile application built using the Flutter framework.</p>
+            </article>
+            <article class="project-card">
+                <h3>iPetro</h3>
+                <p>A comprehensive system for automating visual inspection reports using AI-powered defect detection.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formFeedback" class="hidden"></p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Yi Jing. All rights reserved.</p>
+        <p id="dateTimeDisplay"></p> <!-- JS will populate this -->
+        <div class="social-links">
+            <!-- Requirement: External Links -->
+            <a href="https://github.com/jinggggg030" target="_blank">GitHub</a>
+            <a href="https://www.utem.edu.my/" target="_blank">UTeM</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
