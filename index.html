@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yi Jing - Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
     <header>
         <nav>
             <ul class="nav-links">
@@ -19,8 +21,10 @@
             </ul>
         </nav>
         <div class="hero">
-            <img src="profile.jpg" alt="Yi Jing" class="profile-img">
-            <h1>Hi, I'm Yi Jing</h1>
+            <div class="profile-img-container">
+                <img src="profile.jpg" alt="Yi Jing" class="profile-img">
+            </div>
+            <h1>Hi, I'm <span class="highlight">Yi Jing</span></h1>
             <p>Software Engineering Student & UI/UX Enthusiast</p>
         </div>
     </header>
@@ -100,11 +104,12 @@
         <p>&copy; <span id="currentYear"></span> Yi Jing. All rights reserved.</p>
         <p id="dateTimeDisplay"></p> <!-- JS will populate this -->
         <div class="social-links">
-            <!-- Requirement: External Links -->
-            <a href="https://github.com/jinggggg030" target="_blank">GitHub</a>
-            <a href="https://www.utem.edu.my/" target="_blank">UTeM</a>
+            <a href="https://github.com/jinggggg030" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.utem.edu.my/" target="_blank"><i class="fas fa-university"></i> UTeM</a>
         </div>
     </footer>
+
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
 </body>
